@@ -203,7 +203,7 @@ abstract class Sandhills_Requirements_Check {
 	 * @since 1.0.0
 	 */
 	public function bootstrap() {
-		\Affiliate_WP::instance( $this->get_file() );
+		\Sandhills_Plugin::instance( $this->get_file() );
 	}
 
 	/**
@@ -506,7 +506,7 @@ abstract class Sandhills_Requirements_Check {
 		$lang_dir = dirname( plugin_basename( $this->get_file() ) ) . '/languages/';
 
 		/**
-		 * Filters the languages directory for AffiliateWP - Affiliate Portal plugin.
+		 * Filters the languages directory for the plugin.
 		 *
 		 * @since 1.0
 		 *
